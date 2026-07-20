@@ -19,10 +19,11 @@ public class Main {
         System.out.print("How much armor toughness? (1-20) ");
         int toughness = scanner.nextInt();
 
-        double damage_taken = damage * (1 - Math.min(20,Math.max( armor_points/5,armor_points - 4 * damage / toughness + 8)) / 25);
+        double damage_taken = (damage * (1 - Math.min(20,Math.max( armor_points / 5,armor_points - 4 * damage / toughness + 8)) / 25));
         System.out.println("The damage taken is " + damage_taken);
 
         scanner.close();
+
 
     }
 
