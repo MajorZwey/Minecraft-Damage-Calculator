@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 public class Main {
-   Public static void main(String[] args) {
+   static void main(String[] args) {
 
 
 
@@ -22,7 +22,7 @@ public class Main {
         double damage_taken = damage * (1 - Math.min(20,Math.max( armor_points/5,armor_points - 4 * damage / toughness + 8)) / 25);
         System.out.println("The damage taken is " + damage_taken);
 
-        Scanner.close()
+        scanner.close();
 
     }
 
