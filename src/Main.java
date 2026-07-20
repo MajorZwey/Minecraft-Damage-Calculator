@@ -23,7 +23,7 @@ public class Main {
         System.out.println("The damage taken without enchants is " + damage_taken);
 
         System.out.println("How much protection? (1-20) ");
-        double protection = scanner.nextDouble();
+        double protection = Math.min(20,scanner.nextDouble());
 
         double damage_taken_prot = damage_taken * (1 - protection / 25);
 
